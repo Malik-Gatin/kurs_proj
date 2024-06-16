@@ -8,6 +8,10 @@ logger = logging.getLogger(__name__)
 
 @st.cache_resource
 def load_model():
+    """
+    Функция для загрузки модели и установки ее в режим оценки.
+    Используется кэширование для предотвращения повторной загрузки модели при каждом запуске.
+    """
     model = fasterrcnn_resnet50_fpn_v2(weights=WEIGHTS, box_score_thresh=BOX_SCORE_THRESH)
     model.eval()
     logger.info("Модель успешно загружена")
