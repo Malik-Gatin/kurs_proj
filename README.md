@@ -1,3 +1,6 @@
+Как запускать приложение:
+Команда в терминале: streamlit run app.py
+
 Requirements:
 altair==5.3.0
 asttokens==2.4.1
