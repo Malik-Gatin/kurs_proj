@@ -2,6 +2,7 @@
 Команда в терминале: streamlit run app.py
 
 Requirements:
+﻿python==3.9.13
 pytest==8.2.2
 torch==2.3.1
 numpy==1.26.4
